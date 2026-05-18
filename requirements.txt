@@ -1,0 +1,14 @@
+playwright
+browser-use
+ollama
+fastapi
+uvicorn
+sqlalchemy
+pandas
+python-dotenv
+beautifulsoup4
+lxml
+requests
+langchain
+langgraph
+pydantic
