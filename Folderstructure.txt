@@ -1,0 +1,78 @@
+ai-job-agent/
+│
+├── app/
+│   ├── agents/
+│   │   ├── search_agent.py
+│   │   ├── filter_agent.py
+│   │   ├── apply_agent.py
+│   │   ├── resume_agent.py
+│   │   ├── tracker_agent.py
+│   │   └── orchestrator.py
+│   │
+│   ├── api/
+│   │   ├── server.py
+│   │   └── routes/
+│   │       └── jobs.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   ├── constants.py
+│   │   └── utils.py
+│   │
+│   ├── database/
+│   │   ├── db.py
+│   │   ├── models.py
+│   │   └── schema.sql
+│   │
+│   ├── models/
+│   │   └── ollama_client.py
+│   │
+│   ├── prompts/
+│   │   ├── filter_prompt.txt
+│   │   ├── scoring_prompt.txt
+│   │   ├── resume_prompt.txt
+│   │   └── cover_letter_prompt.txt
+│   │
+│   ├── services/
+│   │   ├── linkedin_service.py
+│   │   ├── indeed_service.py
+│   │   ├── scoring_service.py
+│   │   └── resume_service.py
+│   │
+│   ├── tools/
+│   │   ├── browser.py
+│   │   ├── scraper.py
+│   │   ├── parser.py
+│   │   └── pdf_tools.py
+│   │
+│   └── workflows/
+│       ├── search_workflow.py
+│       ├── apply_workflow.py
+│       └── daily_run.py
+│
+├── data/
+│   ├── raw_jobs/
+│   ├── processed_jobs/
+│   └── exports/
+│
+├── logs/
+│
+├── resumes/
+│   ├── master_resume.pdf
+│   └── generated/
+│
+├── scripts/
+│   ├── setup_db.py
+│   └── run_daily.py
+│
+├── tests/
+│   ├── test_scraper.py
+│   ├── test_filter.py
+│   └── test_apply.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── main.py
